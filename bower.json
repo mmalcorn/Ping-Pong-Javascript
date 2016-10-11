@@ -6,7 +6,7 @@
     "sp <sampeppard@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/mmalcorn/Ping-Pong-Javascript",
   "ignore": [
     "**/.*",
     "node_modules",
