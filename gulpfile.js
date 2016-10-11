@@ -77,6 +77,10 @@ gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
   browserSync.reload();
 });
 
+gulp.task('bowerBuild', ['bower'], function(){
+  browserSync.reload();
+});
+
 gulp.task('serve', function() {
   browserSync.init({
     server: {
@@ -85,4 +89,5 @@ gulp.task('serve', function() {
     }
   });
   gulp.watch(['js/*.js'], ['jsBuild']);
+  gulp.watch(['bower.json'], ['bowerBuild']);
 });
